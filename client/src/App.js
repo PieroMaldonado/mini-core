@@ -21,7 +21,8 @@ function App() {
 
   useEffect(() => {
     axios
-    .get("http://localhost:4000/clientes/all")
+    // .get("http://localhost:4000/clientes/all")
+    .get("https://mini-core-api.onrender.com/clientes/all")
     .then((response) => {
       setClients([])
       setAllClients(response.data)
@@ -30,7 +31,8 @@ function App() {
 
   useEffect(() => {
     axios
-    .get("http://localhost:4000/contratos/all")
+    // .get("http://localhost:4000/contratos/all")
+    .get("https://mini-core-api.onrender.com/contratos/all")
     .then((response) => {
       setContracts([])
       setAllContracts(response.data)
